@@ -7,12 +7,16 @@ import com.bharathkalyans.dsalgovisualizer.databinding.ActivityTreemapBinding
 
 class Treemap : AppCompatActivity() {
 
-    private lateinit var treemapbinding : ActivityTreemapBinding
+    private lateinit var treemapbinding: ActivityTreemapBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         treemapbinding = ActivityTreemapBinding.inflate(layoutInflater)
+
+        treemapbinding.btnTreeMapAdd.setOnClickListener {
+
+        }
 
         setContentView(R.layout.activity_treemap)
     }
