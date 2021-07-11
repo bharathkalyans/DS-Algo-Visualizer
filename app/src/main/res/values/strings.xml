@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Data Structures &amp; Algorithm Visualizer</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="sorting_nalgorithms">SORTING ALGORITHMS</string>
+    <string name="tree_n_algorithms">TREE ALGORITHMS</string>
+    <string name="hashing_n_algorithms">HASHING  ALGORITHMS</string>
+    <string name="set_nalgorithms">SET ALGORITHMS</string>
+    <string name="image">Image</string>
+    <string name="insertion_sort">Insertion Sort</string>
+    <string name="bubble_sort">Bubble Sort</string>
+    <string name="selection_sort">Selection Sort</string>
+    <string name="quick_sort">Quick Sort</string>
+    <string name="merge_sort">Merge Sort</string>
+    <string name="hash_set">Hash Set</string>
+    <string name="add_an_element_into_set">Add an Element</string>
+    <string name="add">Add</string>
+    <string name="tree_set">Tree Set</string>
+    <string name="tree_map">Tree Map</string>
+    <string name="hash_map">Hash Map</string>
+    <string name="binary_search_tree">Binary Search Tree</string>
+    <string name="binary_tree">Binary Tree</string>
+    <string name="sort">SORT</string>
+    <string name="randomize">RANDOMIZE</string>
+</resources>

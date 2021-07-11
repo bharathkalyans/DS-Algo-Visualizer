@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".sorting.SortingHomePage">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInsertionSort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardBubbleSort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardBubbleSort"
+        app:layout_constraintTop_toTopOf="@+id/cardBubbleSort">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/insertion_sort"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBubbleSort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardInsertionSort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/bubble_sort"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSelectionSort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardQuickSort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardBubbleSort">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/selection_sort"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardQuickSort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSelectionSort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardSelectionSort"
+        app:layout_constraintTop_toTopOf="@+id/cardSelectionSort"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/quick_sort"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMergeSort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardSelectionSort"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="@string/merge_sort"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
