@@ -6,6 +6,7 @@ import com.bharathkalyans.dsalgovisualizer.R
 import com.bharathkalyans.dsalgovisualizer.databinding.ActivityTreemapBinding
 
 class Treemap : AppCompatActivity() {
+
     private lateinit var treemapbinding : ActivityTreemapBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

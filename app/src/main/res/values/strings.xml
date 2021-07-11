@@ -21,4 +21,8 @@
     <string name="binary_tree">Binary Tree</string>
     <string name="sort">SORT</string>
     <string name="randomize">RANDOMIZE</string>
+    <string name="value">VALUE</string>
+    <string name="key">Key</string>
+    <string name="name">Name</string>
+    <string name="value2">Value</string>
 </resources>
