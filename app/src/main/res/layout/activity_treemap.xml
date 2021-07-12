@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".hashing.Treemap">
 
+    <TextView
+        android:id="@+id/tKV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@color/black"
+        android:text="@string/key_value_pairs"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/treeMapRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTreeMapKey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tKV"
+        tools:listitem="@layout/map_element_view" />
 
     <Button
         android:id="@+id/btnTreeMapAdd"
@@ -69,14 +96,4 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnTreeMapValue" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/treeMapRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/etTreeMapKey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

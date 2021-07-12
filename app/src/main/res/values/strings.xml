@@ -26,4 +26,5 @@
     <string name="name">Name</string>
     <string name="value2">Value</string>
     <string name="tree_value">Tree Value</string>
+    <string name="key_value_pairs">KEY VALUE PAIRS</string>
 </resources>

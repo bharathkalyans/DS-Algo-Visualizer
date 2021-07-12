@@ -14,12 +14,8 @@ class Treemap : AppCompatActivity() {
 
         treemapbinding = ActivityTreemapBinding.inflate(layoutInflater)
 
-        val listOfValues = mutableListOf(
-            KeyValuePair(12, 12),
-            KeyValuePair(13, 14)
-        )
-
-        treemapbinding.treeMapRecyclerView.adapter = MapAdapter(listOfValues, this)
+        val adapter = MapAdapter()
+        treemapbinding.treeMapRecyclerView.adapter = adapter
         treemapbinding.treeMapRecyclerView.layoutManager = LinearLayoutManager(this)
 
         treemapbinding.btnTreeMapAdd.setOnClickListener {

@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".hashing.Hashmap">
 
+    <TextView
+        android:id="@+id/mKV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@color/black"
+        android:text="@string/key_value_pairs"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hashMapRecyclerView"
         android:layout_width="match_parent"
@@ -15,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mKV"
         tools:itemCount="20"
         tools:listitem="@layout/map_element_view" />
 
