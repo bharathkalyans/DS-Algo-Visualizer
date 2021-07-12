@@ -17,31 +17,32 @@ class Hashmap : AppCompatActivity() {
 
         hashmapbinding = ActivityHashmapBinding.inflate(layoutInflater)
 
+
+        val adapter = MapAdapter()
+        hashmapbinding.hashMapRecyclerView.adapter = adapter
+        hashmapbinding.hashMapRecyclerView.layoutManager =
+            LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+
+
         val map = HashMap<Int, Int>()
 
         hashmapbinding.btnHashMapAdd.setOnClickListener {
-
 
             val key = hashmapbinding.etHashMapKey.text.toString()
             val value = hashmapbinding.etHashMapName.text.toString()
             val listOfValues = mutableListOf<KeyValuePair>()
 
 
-            val adapter = MapAdapter()
-            hashmapbinding.hashMapRecyclerView.adapter = adapter
-            hashmapbinding.hashMapRecyclerView.layoutManager =
-                LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-
-
             if (key == "" || value == "") {
-                Toast.makeText(applicationContext, "Null Key / Null Value", Toast.LENGTH_SHORT)
+                Toast.makeText(applicationContext, "Please Fill all Fields 😇", Toast.LENGTH_SHORT)
                     .show()
             } else {
                 map[key.toInt()] = value.toInt()
 
                 for (m in map) {
-                    if (!listOfValues.contains(KeyValuePair(m.key, m.value)))
-                        listOfValues.add(KeyValuePair(m.key, m.value))
+                    val pair = KeyValuePair(m.key, m.value)
+                    if (!listOfValues.contains(pair))
+                        listOfValues.add(pair)
                 }
                 adapter.updateData(listOfValues)
             }
