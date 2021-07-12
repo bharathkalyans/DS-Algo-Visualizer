@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:clickable="false"
         android:text="@string/key"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toBottomOf="@+id/etTreeMapKey"
+        app:layout_constraintEnd_toStartOf="@+id/etTreeMapKey"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toTopOf="@+id/etTreeMapKey" />
 
     <Button
         android:id="@+id/btnTreeMapValue"
@@ -35,14 +35,14 @@
         android:layout_height="wrap_content"
         android:clickable="false"
         android:text="@string/value"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintBottom_toBottomOf="@+id/etTreeMapValue"
+        app:layout_constraintEnd_toStartOf="@+id/etTreeMapValue"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toTopOf="@+id/etTreeMapValue" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etTreeMapKey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -50,13 +50,13 @@
         android:hint="@string/key"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintBottom_toTopOf="@+id/etTreeMapValue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnTreeMapKey" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etTreeMapValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
@@ -74,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/etTreeMapKey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

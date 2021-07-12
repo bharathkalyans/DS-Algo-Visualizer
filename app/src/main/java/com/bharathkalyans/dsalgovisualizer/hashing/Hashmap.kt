@@ -2,6 +2,7 @@ package com.bharathkalyans.dsalgovisualizer.hashing
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bharathkalyans.dsalgovisualizer.databinding.ActivityHashmapBinding
 
 class Hashmap : AppCompatActivity() {
@@ -16,6 +17,13 @@ class Hashmap : AppCompatActivity() {
         hashmapbinding.btnHashMapAdd.setOnClickListener {
 
         }
+
+        val listOfValues = mutableListOf(
+            KeyValuePair(12,12),
+            KeyValuePair(13,14)
+        )
+        hashmapbinding.hashMapRecyclerView.adapter = MapAdapter(listOfValues, this)
+        hashmapbinding.hashMapRecyclerView.layoutManager = LinearLayoutManager(this)
 
         setContentView(hashmapbinding.root)
     }

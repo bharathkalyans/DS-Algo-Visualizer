@@ -1,12 +1,18 @@
 package com.bharathkalyans.dsalgovisualizer.sorting
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bharathkalyans.dsalgovisualizer.R
+import androidx.appcompat.app.AppCompatActivity
+import com.bharathkalyans.dsalgovisualizer.databinding.ActivityBubbleSortBinding
 
 class BubbleSort : AppCompatActivity() {
+
+    private lateinit var bubblesortbinding: ActivityBubbleSortBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bubble_sort)
+
+        bubblesortbinding = ActivityBubbleSortBinding.inflate(layoutInflater)
+
+        setContentView(bubblesortbinding.root)
     }
 }
