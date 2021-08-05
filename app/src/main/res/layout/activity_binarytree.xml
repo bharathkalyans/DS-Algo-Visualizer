@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".trees.Binarytree">
 
-    <de.blox.treeview.TreeView
+    <!--<de.blox.treeview.TreeView
         android:id="@+id/binaryTreeView"
         android:layout_width="match_parent"
         android:layout_height="500dp"
@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints" />-->
 
 
     <Button
@@ -32,7 +32,6 @@
         android:id="@+id/etTreeValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/tree_value"
         android:inputType="textPersonName"
@@ -41,6 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/binaryTreeView" />
+        app:layout_constraintTop_toTopOf="parent" />
+        <!--app:layout_constraintTop_toBottomOf="@+id/binaryTreeView"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
